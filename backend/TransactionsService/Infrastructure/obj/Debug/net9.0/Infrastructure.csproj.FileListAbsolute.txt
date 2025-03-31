@@ -1,0 +1,17 @@
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfo.cs
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Infrastructure.deps.json
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Infrastructure.dll
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Infrastructure.pdb
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Application.dll
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Domain.dll
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Application.pdb
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\bin\Debug\net9.0\Domain.pdb
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.dll
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
+C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\TransactionsService\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
+      "PackagePath": "staticwebassets\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
+      "PackagePath": "staticwebassets\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
+      "PackagePath": "staticwebassets\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
+      "PackagePath": "staticwebassets\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
+      "PackagePath": "staticwebassets\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

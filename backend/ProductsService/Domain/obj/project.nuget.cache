@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/xMWle5aPvw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fherrera\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\fherrera\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\fherrera\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\fherrera\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
