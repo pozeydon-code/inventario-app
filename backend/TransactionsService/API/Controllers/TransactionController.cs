@@ -1,5 +1,6 @@
 using Application.Transactions.Commands.Create;
 using Application.Transactions.Queries.GetFilteredTransactionsQuery;
+using Application.Transactions.Queries.GetPagedTransactionsQuery;
 using Domain.Models;
 
 namespace API.Controllers;
@@ -38,6 +39,26 @@ public class Transactions : ApiController
             startDate,
             endDate,
             type
+        ));
+
+        return Ok(result);
+    }
+
+    [HttpGet("paged")]
+    public async Task<IActionResult> GetPaged([FromQuery] Guid? productId,
+                                              [FromQuery] DateTime? startDate,
+                                              [FromQuery] DateTime? endDate,
+                                              [FromQuery] TransactionType? type,
+                                              [FromQuery] int page = 1,
+                                              [FromQuery] int pageSize = 10)
+    {
+        var result = await _mediator.Send(new GetPagedTransactionsQuery(
+            productId,
+            startDate,
+            endDate,
+            type,
+            page,
+            pageSize
         ));
 
         return Ok(result);

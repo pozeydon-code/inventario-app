@@ -17,4 +17,18 @@ public interface ITransactionRepository
         DateTime? startDate,
         DateTime? endDate,
         TransactionType? type);
+    Task<List<Transaction>> GetPagedFilteredAsync(
+        Guid? productId,
+        DateTime? startDate,
+        DateTime? endDate,
+        TransactionType? type,
+        int page,
+        int pageSize
+    );
+    Task<int> CountFilteredAsync(
+        Guid? productId,
+        DateTime? startDate,
+        DateTime? endDate,
+        TransactionType? type
+    );
 }

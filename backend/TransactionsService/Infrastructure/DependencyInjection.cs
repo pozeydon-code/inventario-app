@@ -30,8 +30,9 @@ public static class DependencyInjection
 
         services.AddScoped<ITransactionRepository, TransactionRepository>();
 
-        services.AddHttpClient<IProductsApiClient, ProductsApiClient>(client => {
-            client.BaseAddress = new Uri("http://localhost:5106/api");
+        services.AddHttpClient<IProductsApiClient, ProductsApiClient>(client =>
+        {
+            client.BaseAddress = new Uri("http://localhost:5106");
         });
 
         return services;

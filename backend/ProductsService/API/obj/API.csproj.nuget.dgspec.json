@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\API.csproj": {}
+    "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\API.csproj": {
+    "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\API.csproj",
+        "projectUniqueName": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\fherrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\obj\\",
+        "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fherrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,17 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj"
+              "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
+                "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj"
               },
-              "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj"
+              "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -50,8 +47,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -87,25 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
+    "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\fherrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\obj\\",
+        "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fherrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,14 +105,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj"
+              "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj"
               }
             }
           }
@@ -134,8 +127,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -174,25 +166,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
+    "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\fherrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\obj\\",
+        "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fherrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -200,6 +188,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -217,8 +206,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -249,25 +237,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\fherrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Infrastructure\\obj\\",
+        "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fherrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -275,17 +259,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj"
+              "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj": {
+                "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Application\\Application.csproj"
               },
-              "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj"
+              "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\projects\\inventario-app\\backend\\ProductsService\\Domain\\Domain.csproj"
               }
             }
           }
@@ -299,8 +284,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -327,7 +311,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

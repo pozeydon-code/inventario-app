@@ -23,8 +23,6 @@ public class CreateTransactionCommandHandler : IRequestHandler<CreateTransaction
 
     public async Task<ErrorOr<Guid>> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
     {
-        if (!await _transactionRepository.ExistByProductIdAsync(new Guid(request.ProductId)))
-            return Errors.Transactions.ProductNotFound;
 
         if (Detail.Create(request.Detail) is not Detail detail)
             return Errors.Transactions.DetailWithBadFormat;
@@ -34,39 +32,36 @@ public class CreateTransactionCommandHandler : IRequestHandler<CreateTransaction
 
         if (UnitPrice.Create(request.UnitPrice) is not UnitPrice unitPrice)
             return Errors.Transactions.PriceWithBadFormat;
-        
-        if (request.Type == TransactionType.Sell)
+
+        // TODO: Get the actual value in stock or
+
+        var currentStock = await _productsApiClient.GetStockAsync(request.ProductId);
+        if (currentStock == null)
+            return Errors.Transactions.ProductNotFound;
+
+        int updatedStock = request.Type switch
         {
-            // TODO: Get the actual value in stock or 
+            TransactionType.Buy => currentStock.Value + request.Quantity,
+            TransactionType.Sell => currentStock.Value - request.Quantity,
+            _ => currentStock.Value
+        };
 
-            var currentStock = await _productsApiClient.GetStockAsync(new Guid(request.ProductId));
-            if (currentStock == null)
-                return Errors.Transactions.ProductNotFound;
+        if (updatedStock < 0)
+            return Errors.Transactions.OutStock;
 
-            int updatedStock = request.Type switch
-            {
-                TransactionType.Buy => currentStock.Value + request.Quantity,
-                TransactionType.Sell => currentStock.Value - request.Quantity,
-                _ => currentStock.Value
-            };
+        var success = await _productsApiClient.UpdateStockAsync(request.ProductId, updatedStock);
+        if (!success)
+            return Errors.Transactions.CantUpdate;
 
-            if (updatedStock < 0)
-                return Errors.Transactions.OutStock;
-            
-            var success = await _productsApiClient.UpdateStockAsync(new Guid(request.ProductId), updatedStock);
-            if (!success)
-                return Errors.Transactions.CantUpdate;
-        }
-        
-       var transaction = new Transaction(
-            new TransactionId(Guid.NewGuid()),
-            request.Date,
-            request.Type,
-            new Guid(request.ProductId),
-            quantity,
-            unitPrice,
-            detail
-        );
+        var transaction = new Transaction(
+             new TransactionId(Guid.NewGuid()),
+             request.Date,
+             request.Type,
+             request.ProductId,
+             quantity,
+             unitPrice,
+             detail
+         );
 
         await _transactionRepository.AddAsync(transaction);
 

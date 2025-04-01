@@ -30,7 +30,7 @@ public class TransactionRepository : ITransactionRepository
     public async Task<List<Transaction>> GetByProductIdAsync(Guid productId) => await _transactionDbContext.Transactions
                                                                                             .Where(t => t.ProductId == productId)
                                                                                             .ToListAsync();
-    
+
     public async Task<List<Transaction>> GetFilteredAsync(
         Guid? productId,
         DateTime? startDate,
@@ -55,5 +55,42 @@ public class TransactionRepository : ITransactionRepository
             .OrderByDescending(t => t.Date)
             .ToListAsync();
     }
-    
+
+    public async Task<List<Transaction>> GetPagedFilteredAsync(Guid? productId, DateTime? startDate, DateTime? endDate, TransactionType? type, int page, int pageSize)
+    {
+        var query = _transactionDbContext.Transactions.AsQueryable();
+
+        if (productId.HasValue)
+            query = query.Where(t => t.ProductId == productId.Value);
+
+        if (startDate.HasValue)
+            query = query.Where(t => t.Date >= startDate.Value);
+
+        if (endDate.HasValue)
+            query = query.Where(t => t.Date <= endDate.Value);
+
+        if (type.HasValue)
+            query = query.Where(t => t.Type == type.Value);
+
+        return await query.OrderByDescending(t => t.Date).Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+    }
+
+    public async Task<int> CountFilteredAsync(Guid? productId, DateTime? startDate, DateTime? endDate, TransactionType? type)
+    {
+        var query = _transactionDbContext.Transactions.AsQueryable();
+
+        if (productId.HasValue)
+            query = query.Where(t => t.ProductId == productId.Value);
+
+        if (startDate.HasValue)
+            query = query.Where(t => t.Date >= startDate.Value);
+
+        if (endDate.HasValue)
+            query = query.Where(t => t.Date <= endDate.Value);
+
+        if (type.HasValue)
+            query = query.Where(t => t.Type == type.Value);
+
+        return await query.CountAsync();
+    }
 }

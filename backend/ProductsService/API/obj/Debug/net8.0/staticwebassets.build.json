@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qy9NB9P8bwXSCxxmYx7bSDX+52dueKRlizVAWXNziIE=",
+  "Hash": "1icIFagOMUi8op13Vx+t4jvzyhbZObDQW007zcfrVYw=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,528 +10,106 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
+      "Identity": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/1b1b43ca-5a5b-4cd9-81cb-49259f24ad94#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "h5onkbu81o",
-      "Integrity": "BVoNhykzQY0ZjBpBTfDiMT+JR1CReiSRjWhBNw7ipMg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg"
     },
     {
-      "Identity": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
+      "Identity": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/25e332e1-d7be-4f2f-95e7-48a39e64cbdc#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qo6333gsne",
-      "Integrity": "mhMuQoXelzAwCTTOiFk8qebumdJIwePEoPWcwJUx0mc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg"
     },
     {
-      "Identity": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
+      "Identity": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/695a8de9-b5db-4028-8748-372f05a8b83f#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "con77n7z76",
-      "Integrity": "nMYImXlrZ7UXbMFVQRRXyXLnqqCWX2lSfLtO2mPpcbI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg"
     },
     {
-      "Identity": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
+      "Identity": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/78ddba3d-1d7d-4c39-9bf6-3490d28db0d3#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "i1iifpscl7",
-      "Integrity": "KqFWBNCOGUzcxFhK6jD1ef5ccD308VCB1VpnRtIe7vU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg"
     },
     {
-      "Identity": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
+      "Identity": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/f44c75e7-1be6-4d9f-bddf-cc8d84477940#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gn4dkwnh3x",
-      "Integrity": "NOPNpiw6NyvdGZsXwu9C6MzpMSN609y9euCprzIBAbI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "images/1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.h5onkbu81o.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1646425"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BVoNhykzQY0ZjBpBTfDiMT+JR1CReiSRjWhBNw7ipMg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "h5onkbu81o"
-        },
-        {
-          "Name": "label",
-          "Value": "images/1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BVoNhykzQY0ZjBpBTfDiMT+JR1CReiSRjWhBNw7ipMg="
-        }
-      ]
-    },
-    {
-      "Route": "images/1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\1b1b43ca-5a5b-4cd9-81cb-49259f24ad94.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1646425"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BVoNhykzQY0ZjBpBTfDiMT+JR1CReiSRjWhBNw7ipMg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-BVoNhykzQY0ZjBpBTfDiMT+JR1CReiSRjWhBNw7ipMg="
-        }
-      ]
-    },
-    {
-      "Route": "images/25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26264"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mhMuQoXelzAwCTTOiFk8qebumdJIwePEoPWcwJUx0mc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:30:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mhMuQoXelzAwCTTOiFk8qebumdJIwePEoPWcwJUx0mc="
-        }
-      ]
-    },
-    {
-      "Route": "images/25e332e1-d7be-4f2f-95e7-48a39e64cbdc.qo6333gsne.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26264"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mhMuQoXelzAwCTTOiFk8qebumdJIwePEoPWcwJUx0mc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:30:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qo6333gsne"
-        },
-        {
-          "Name": "label",
-          "Value": "images/25e332e1-d7be-4f2f-95e7-48a39e64cbdc.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mhMuQoXelzAwCTTOiFk8qebumdJIwePEoPWcwJUx0mc="
-        }
-      ]
-    },
-    {
-      "Route": "images/695a8de9-b5db-4028-8748-372f05a8b83f.con77n7z76.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1270714"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nMYImXlrZ7UXbMFVQRRXyXLnqqCWX2lSfLtO2mPpcbI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "con77n7z76"
-        },
-        {
-          "Name": "label",
-          "Value": "images/695a8de9-b5db-4028-8748-372f05a8b83f.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nMYImXlrZ7UXbMFVQRRXyXLnqqCWX2lSfLtO2mPpcbI="
-        }
-      ]
-    },
-    {
-      "Route": "images/695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\695a8de9-b5db-4028-8748-372f05a8b83f.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1270714"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nMYImXlrZ7UXbMFVQRRXyXLnqqCWX2lSfLtO2mPpcbI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nMYImXlrZ7UXbMFVQRRXyXLnqqCWX2lSfLtO2mPpcbI="
-        }
-      ]
-    },
-    {
-      "Route": "images/78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.i1iifpscl7.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "910950"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqFWBNCOGUzcxFhK6jD1ef5ccD308VCB1VpnRtIe7vU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i1iifpscl7"
-        },
-        {
-          "Name": "label",
-          "Value": "images/78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqFWBNCOGUzcxFhK6jD1ef5ccD308VCB1VpnRtIe7vU="
-        }
-      ]
-    },
-    {
-      "Route": "images/78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\78ddba3d-1d7d-4c39-9bf6-3490d28db0d3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "910950"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqFWBNCOGUzcxFhK6jD1ef5ccD308VCB1VpnRtIe7vU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqFWBNCOGUzcxFhK6jD1ef5ccD308VCB1VpnRtIe7vU="
-        }
-      ]
-    },
-    {
-      "Route": "images/f44c75e7-1be6-4d9f-bddf-cc8d84477940.gn4dkwnh3x.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1152768"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NOPNpiw6NyvdGZsXwu9C6MzpMSN609y9euCprzIBAbI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gn4dkwnh3x"
-        },
-        {
-          "Name": "label",
-          "Value": "images/f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NOPNpiw6NyvdGZsXwu9C6MzpMSN609y9euCprzIBAbI="
-        }
-      ]
-    },
-    {
-      "Route": "images/f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
-      "AssetFile": "C:\\Users\\fherrera\\Downloads\\inventario-app\\inventario-app\\backend\\ProductsService\\API\\wwwroot\\images\\f44c75e7-1be6-4d9f-bddf-cc8d84477940.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1152768"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NOPNpiw6NyvdGZsXwu9C6MzpMSN609y9euCprzIBAbI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 13:26:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NOPNpiw6NyvdGZsXwu9C6MzpMSN609y9euCprzIBAbI="
-        }
-      ]
     }
   ]
 }

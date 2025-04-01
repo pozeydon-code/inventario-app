@@ -399,3 +399,4 @@ C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsServic
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\API\obj\Debug\net8.0\API.pdb
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\API\obj\Debug\net8.0\ref\API.dll
+D:\projects\inventario-app\backend\ProductsService\API\obj\Debug\net8.0\API.sourcelink.json

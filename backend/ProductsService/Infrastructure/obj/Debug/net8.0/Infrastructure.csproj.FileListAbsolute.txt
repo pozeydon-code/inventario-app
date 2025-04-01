@@ -49,3 +49,4 @@ C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsServic
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\fherrera\Downloads\inventario-app\inventario-app\backend\ProductsService\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\projects\inventario-app\backend\ProductsService\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

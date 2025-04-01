@@ -12,9 +12,9 @@ public class ProductsApiClient : IProductsApiClient
         _httpClient = httpClient;
     }
 
-    public async Task<int?> GetStockAsync(Guid productId )
+    public async Task<int?> GetStockAsync(Guid productId)
     {
-        var response = await _httpClient.GetAsync($"/products/{productId}");
+        var response = await _httpClient.GetAsync($"/api/products/{productId}");
         if (!response.IsSuccessStatusCode)
             return null;
 
@@ -25,7 +25,7 @@ public class ProductsApiClient : IProductsApiClient
     public async Task<bool> UpdateStockAsync(Guid productId, int newStock)
     {
         var payload = new { stock = newStock };
-        var response = await _httpClient.PatchAsync($"/products/{productId}/stock", JsonContent.Create(payload));
+        var response = await _httpClient.PatchAsync($"/api/products/{productId}/stock", JsonContent.Create(payload));
         return response.IsSuccessStatusCode;
     }
 

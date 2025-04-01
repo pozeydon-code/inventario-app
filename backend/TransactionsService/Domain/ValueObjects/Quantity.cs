@@ -2,11 +2,11 @@ namespace Domain.ValueObjects;
 
 public partial record Quantity
 {
-    public decimal Value { get; init; }
+    public int Value { get; init; }
 
-    private Quantity(decimal value) => Value = value;
+    private Quantity(int value) => Value = value;
 
-    public static Quantity? Create(decimal value)
+    public static Quantity? Create(int value)
     {
         if (value < 0)
             return null;
@@ -14,6 +14,6 @@ public partial record Quantity
         return new Quantity(value);
     }
 
-    public static implicit operator decimal(Quantity quantity) => quantity.Value;
+    public static implicit operator int(Quantity quantity) => quantity.Value;
     public override string ToString() => Value.ToString("C");
 }

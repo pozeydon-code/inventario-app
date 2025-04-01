@@ -1,7 +1,9 @@
+using System.Text.Json.Serialization;
 using Domain.ValueObjects;
 
 namespace Domain.Models;
 
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum TransactionType
 {
     Buy,
@@ -41,7 +43,7 @@ public sealed class Transaction
     {
         return new Transaction(new TransactionId(id), date, type, productoId, quantity, unitPrice, detail);
     }
-    
+
     #endregion
 
 }
