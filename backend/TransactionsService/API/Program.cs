@@ -6,17 +6,9 @@ using Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddPresentation()
+builder.Services.AddPresentation(builder.Configuration)
                 .AddInfrastructure(builder.Configuration)
                 .AddApplication();
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowLocalhost",
-        builder => builder.WithOrigins("http://localhost:5173")
-                          .AllowAnyMethod()
-                          .AllowAnyHeader());
-});
 
 var app = builder.Build();
 
@@ -30,7 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 
-app.UseCors("AllowLocalhost");
+app.UseCors("AllowLocalHost");
 
 app.UseExceptionHandler("/error");
 

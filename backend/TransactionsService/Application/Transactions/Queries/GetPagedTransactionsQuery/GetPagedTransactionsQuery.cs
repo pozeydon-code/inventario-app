@@ -10,4 +10,4 @@ public record GetPagedTransactionsQuery(
     TransactionType? Type,
     int Page,
     int PageSize
-) : IRequest<PagedResponse<TransactionResponse>>;
+) : IRequest<ErrorOr<PagedResponse<TransactionResponse>>>;

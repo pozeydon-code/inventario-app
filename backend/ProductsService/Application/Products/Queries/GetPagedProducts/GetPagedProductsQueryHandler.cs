@@ -4,7 +4,7 @@ using Application.Products.Interfaces;
 
 namespace Application.Products.Commands.GetPagedProducts;
 
-public class GetPagedProductsQueryHandler : IRequestHandler<GetPagedProductsQuery, PageResponse<ProductResponse>>
+public class GetPagedProductsQueryHandler : IRequestHandler<GetPagedProductsQuery, ErrorOr<PageResponse<ProductResponse>>>
 {
     private readonly IProductRepository _productRepository;
 
@@ -13,7 +13,7 @@ public class GetPagedProductsQueryHandler : IRequestHandler<GetPagedProductsQuer
         _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
     }
 
-    public async Task<PageResponse<ProductResponse>> Handle(GetPagedProductsQuery request, CancellationToken cancellationToken)
+    public async Task<ErrorOr<PageResponse<ProductResponse>>> Handle(GetPagedProductsQuery request, CancellationToken cancellationToken)
     {
         var products = await _productRepository.GetPagedAsync(request.Page, request.PageSize, request.Search);
 

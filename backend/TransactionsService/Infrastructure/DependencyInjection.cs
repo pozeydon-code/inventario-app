@@ -32,7 +32,7 @@ public static class DependencyInjection
 
         services.AddHttpClient<IProductsApiClient, ProductsApiClient>(client =>
         {
-            client.BaseAddress = new Uri("http://localhost:5106");
+            client.BaseAddress = new Uri(configuration.GetSection("ProductsServiceUrl").Get<string>()!);//localhost:5106
         });
 
         return services;

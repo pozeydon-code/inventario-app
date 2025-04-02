@@ -33,26 +33,27 @@ public class CreateTransactionCommandHandler : IRequestHandler<CreateTransaction
         if (UnitPrice.Create(request.UnitPrice) is not UnitPrice unitPrice)
             return Errors.Transactions.PriceWithBadFormat;
 
-        // TODO: Get the actual value in stock or
-
-        var currentStock = await _productsApiClient.GetStockAsync(request.ProductId);
-        if (currentStock == null)
-            return Errors.Transactions.ProductNotFound;
-
-        int updatedStock = request.Type switch
+        if (request.Type == TransactionType.Sell)
         {
-            TransactionType.Buy => currentStock.Value + request.Quantity,
-            TransactionType.Sell => currentStock.Value - request.Quantity,
-            _ => currentStock.Value
-        };
 
-        if (updatedStock < 0)
-            return Errors.Transactions.OutStock;
+            var currentStock = await _productsApiClient.GetStockAsync(request.ProductId);
+            if (currentStock == null)
+                return Errors.Transactions.ProductNotFound;
 
-        var success = await _productsApiClient.UpdateStockAsync(request.ProductId, updatedStock);
-        if (!success)
-            return Errors.Transactions.CantUpdate;
+            int updatedStock = request.Type switch
+            {
+                TransactionType.Buy => currentStock.Value + request.Quantity,
+                TransactionType.Sell => currentStock.Value - request.Quantity,
+                _ => currentStock.Value
+            };
 
+            if (updatedStock < 0)
+                return Errors.Transactions.OutStock;
+
+            var success = await _productsApiClient.UpdateStockAsync(request.ProductId, updatedStock);
+            if (!success)
+                return Errors.Transactions.CantUpdate;
+        }
         var transaction = new Transaction(
              new TransactionId(Guid.NewGuid()),
              request.Date,

@@ -34,7 +34,10 @@ public class Products : ApiController
     {
         var result = await _mediator.Send(new GetPagedProductsQuery(page, pageSize, search));
 
-        return Ok(result);
+        return result.Match(
+            listResult => Ok(listResult),
+            errors => Problem(errors)
+        );
     }
 
     [HttpGet("{id}")]
@@ -57,7 +60,7 @@ public class Products : ApiController
         var updateResult = await _mediator.Send(commandRequest);
 
         return updateResult.Match(
-            product => Ok(),
+            product => Ok(product),
             errors => Problem(errors)
         );
     }
@@ -67,13 +70,17 @@ public class Products : ApiController
     {
         var deleteResult = await _mediator.Send(new DeleteProductCommand(id));
 
-        return Ok(StatusCodes.Status200OK);
+        return deleteResult.Match(
+            product => Ok(StatusCodes.Status200OK),
+            errors => Problem(errors)
+        );
     }
 
     [HttpPatch("{id}/stock")]
-    public async Task<IActionResult> UpdateStock(Guid id, [FromBody] UpdateStock updateStock){
-        var updateResult = await _mediator.Send(new UpdateStockCommand (id, updateStock.Stock) );
-        
+    public async Task<IActionResult> UpdateStock(Guid id, [FromBody] UpdateStock updateStock)
+    {
+        var updateResult = await _mediator.Send(new UpdateStockCommand(id, updateStock.Stock));
+
         return updateResult.Match(
             product => Ok(),
             errors => Problem(errors)

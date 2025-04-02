@@ -5,4 +5,4 @@ public record GetPagedProductsQuery(
     int Page,
     int PageSize,
     string? Search
-    ) : IRequest<PageResponse<ProductResponse>>;
+    ) : IRequest<ErrorOr<PageResponse<ProductResponse>>>;
