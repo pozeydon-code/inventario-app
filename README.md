@@ -58,7 +58,7 @@ dotnet run --project API
 ### ▶️ 4. Frontend – React
 
 ```bash
-cd frontend/react-app
+cd frontend/inventario-frontend
 npm install
 npm run dev
 ```
@@ -66,7 +66,7 @@ npm run dev
 Tambien puedes usar bun para un mejor rendimiento (recomendado)
 
 ```bash
-cd frontend/react-app
+cd frontend/inventario-frontend
 bun install
 bun run dev
 ```
