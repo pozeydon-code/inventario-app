@@ -156,8 +156,8 @@ Desde ahí puedes cambiar fácilmente las rutas hacia los microservicios de prod
 
 ```ts
 // url.ts
-export const BASE_PRODUCT_API = "http://localhost:5106/api";
-export const BASE_TRANSACTION_API = "http://localhost:5107/api";
+export const BASE_PRODUCT_API = 'http://localhost:5106/api';
+export const BASE_TRANSACTION_API = 'http://localhost:5107/api';
 ```
 
 Esto facilita mantener y modificar las rutas sin tener que buscarlas en cada componente.
@@ -166,9 +166,13 @@ Esto facilita mantener y modificar las rutas sin tener que buscarlas en cada com
 
 ## 📸 Evidencias del sistema
 
-### 🧾 Listado dinámico con paginación
+### 🧾 Listado de productos
 
-![Listado de productos y transacciones](evidencias/listado-productos.png)
+![Listado de productos](evidencias/listado-productos.png)
+
+### 🧾 Listado de transacciones
+
+![Listado de productos](evidencias/listado-transacciones.png)
 
 ### ➕ Pantalla para creación de productos
 
