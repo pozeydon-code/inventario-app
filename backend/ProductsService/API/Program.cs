@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 
-app.UseCors("AllowLocalhost");
+app.UseCors("AllowLocalHost");
 
 app.UseExceptionHandler("/error");
 
