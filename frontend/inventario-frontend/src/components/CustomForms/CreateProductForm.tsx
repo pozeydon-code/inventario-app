@@ -120,6 +120,7 @@ export const CreateProductForm = ({ initialData, isEdit }: Props) => {
               src={`${URLS.imageUrls}${initialData?.image}`}
               aspectRatio={4 / 3}
               width="200px"
+              alt={`${initialData?.name}`}
             />
           ) : null}
           <ImageUpload<CreateProductValues>
