@@ -33,7 +33,7 @@ cd inventario-app
 
 ### ▶️ 2. Backend – Productos
 
-Se debe cambiar las cadenas de conexion de la base de datos `API/appsettings.json`
+Se debe cambiar las cadenas de conexion de la base de datos `API/appsettings.json` y se debe crear la carpeta wwwroot en la carpeta API de ProductService
 
 ```bash
 cd backend/ProductsService
