@@ -38,8 +38,8 @@ Se debe cambiar las cadenas de conexion de la base de datos `API/appsettings.jso
 ```bash
 cd backend/ProductsService
 dotnet restore
-dotnet ef database update --project ProductsService.Infrastructure --startup-project ProductsService.API
-dotnet run --project ProductsService.API
+dotnet ef database update --p Infrastructure --s API
+dotnet run --project API
 ```
 
 ### ▶️ 3. Backend – Transacciones
@@ -51,8 +51,8 @@ Se debe cambiar la url del archivo Infrastructure/DependencyInjection.cs con la 
 ```bash
 cd backend/TransactionsService
 dotnet restore
-dotnet ef database update --project TransactionsService.Infrastructure --startup-project TransactionsService.API
-dotnet run --project TransactionsService.API
+dotnet ef database update --project Infrastructure --startup-project API
+dotnet run --project API
 ```
 
 ### ▶️ 4. Frontend – React
@@ -161,6 +161,24 @@ export const BASE_TRANSACTION_API = 'http://localhost:5107/api';
 ```
 
 Esto facilita mantener y modificar las rutas sin tener que buscarlas en cada componente.
+
+---
+
+## 🗃️ Uso del script SQL (alternativa a migraciones)
+
+Si prefieres no usar migraciones de Entity Framework, puedes crear la base de datos manualmente ejecutando el script ubicado en:
+
+```
+/database/init_inventario_final.sql
+```
+
+### Cómo ejecutarlo:
+
+1. Abre SQL Server Management Studio (SSMS) o Azure Data Studio.
+2. Ejecuta todo el contenido del script para crear la base de datos `inventarioApp`, sus tablas y los 15 productos.
+3. Luego puedes agregar manualmente algunas transacciones usando los IDs generados en la tabla `Products`.
+
+> 💡 Este método es útil para probar rápidamente la aplicación sin necesidad de migrar desde código.
 
 ---
 
