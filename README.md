@@ -190,14 +190,6 @@ Esto facilita mantener y modificar las rutas sin tener que buscarlas en cada com
 
 ![Editar transacción](evidencias/editar-transaccion.png)
 
-### 🔍 Pantalla de filtros dinámicos
-
-![Filtros dinámicos](evidencias/filtros-dinamicos.png)
-
-### 📋 Consulta de información de un formulario (extra)
-
-![Consulta](evidencias/consulta-formulario.png)
-
 ## ✨ Autor
 
 Desarrollado por Francisco Herrera – Evaluación técnica
