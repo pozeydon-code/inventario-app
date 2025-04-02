@@ -18,7 +18,7 @@ Este proyecto implementa una aplicación de gestión de productos y transaccione
 ### ▶️ Frontend – React
 
 ```bash
-cd frontend/react-app
+cd frontend/inventario-app
 npm install
 npm run dev
 ```
@@ -26,7 +26,7 @@ npm run dev
 Tambien puedes usar bun para un mejor rendimiento (recomendado)
 
 ```bash
-cd frontend/react-app
+cd frontend/inventario-app
 bun install
 bun run dev
 ```
@@ -38,7 +38,7 @@ bun run dev
 Las URL base para consumir los microservicios desde el frontend están centralizadas en:
 
 ```
-frontend/react-app/src/api/url.ts
+frontend/inventario-app/src/api/url.ts
 ```
 
 Desde ahí puedes cambiar fácilmente las rutas hacia los microservicios de productos o transacciones según el entorno en el que se despliegue.
