@@ -30,8 +30,9 @@ export const TransactionListPage = () => {
   const [pageSize] = useState<number>(10);
   const [filters, setFilters] = useState<Filters>(EmptyFilters);
 
-  const { sendRequest, data, loading, error } =
-    useApi<PageResponse<Transaction>>();
+  const { sendRequest, data, loading, error } = useApi<
+    PageResponse<Transaction> | any
+  >();
 
   const totalCount = data?.totalCount ?? 0;
   const totalPages = Math.ceil(totalCount / pageSize);
@@ -48,8 +49,6 @@ export const TransactionListPage = () => {
     });
   }, [page, pageSize, filters]);
 
-  console.log(data);
-
   const handlePrevious = () => {
     if (page > 1) setPage((actualValue) => actualValue - 1);
   };
@@ -64,29 +63,33 @@ export const TransactionListPage = () => {
     );
     if (!confirm) return;
 
-    const deleted = await sendRequest({
+    const response = await sendRequest({
       method: "delete",
-      url: `/transactions/${id}`,
+      url: `${URLS.getTransactions}/${id}`,
     });
 
-    if (deleted) {
+    if (!response || response.status || response.status !== 200) {
       toaster.success({
         title: "Producto eliminado",
       });
 
       await sendRequest({
         method: "get",
-        url: "/transactions/paged",
+        url: `${URLS.getTransactionsPaged}`,
         params: {
           page,
           pageSize,
         },
       });
+    } else {
+      toaster.error({
+        title: "Error al Eliminar la Transaccion",
+      });
     }
   };
 
   const handleCreateTransactions = () => {
-    navigate("/transactions/create/");
+    navigate("/transactions/create");
   };
 
   const handleMoveToProducts = () => {
@@ -126,12 +129,15 @@ export const TransactionListPage = () => {
                 <Table.ColumnHeader>Precio</Table.ColumnHeader>
                 <Table.ColumnHeader>Total</Table.ColumnHeader>
                 <Table.ColumnHeader>Detalle</Table.ColumnHeader>
+                <Table.ColumnHeader></Table.ColumnHeader>
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {data?.items?.map((transaction) => (
+              {data?.items?.map((transaction: Transaction) => (
                 <Table.Row key={transaction.id}>
-                  <Table.Cell>{transaction.date}</Table.Cell>
+                  <Table.Cell>
+                    {new Date(transaction.date).toLocaleDateString()}
+                  </Table.Cell>
                   <Table.Cell>
                     {transaction.type == "Sell" ? "Vendido" : "Comprado"}
                   </Table.Cell>

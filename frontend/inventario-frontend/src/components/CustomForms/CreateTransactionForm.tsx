@@ -23,6 +23,8 @@ export const CreateTransactionForm = ({ initialData, isEdit }: Props) => {
   const navigate = useNavigate();
   const { loading, sendRequest } = useApi();
 
+  if (initialData) initialData.date = new Date();
+
   const defaultValues = initialData || EmptyCreateTransaction;
   const {
     control,
@@ -36,7 +38,6 @@ export const CreateTransactionForm = ({ initialData, isEdit }: Props) => {
   });
 
   const onSubmit = async (data: CreateTransactionValues) => {
-    console.log(data);
     const response = await sendRequest({
       method: isEdit ? "put" : "post",
       url: isEdit
@@ -45,9 +46,9 @@ export const CreateTransactionForm = ({ initialData, isEdit }: Props) => {
       body: data,
     });
 
-    if (!response && response.status !== "200") {
+    if (!response || (response.status && response.status !== "200")) {
       toaster.error({
-        title: `Error al ${isEdit ? "Editar" : "Crear"} la Transaccion`,
+        title: `Error al ${isEdit ? "Editar" : "Crear"} la Transaccion: ${response.errors.Transaction}`,
       });
       return;
     }
@@ -64,7 +65,9 @@ export const CreateTransactionForm = ({ initialData, isEdit }: Props) => {
   };
   return (
     <Box p={4} justifyItems="center">
-      <Heading mb={4}>Crear Producto</Heading>
+      <Heading mb={4}>
+        {isEdit ? "Editar Transacción" : "Crear Transacción"}
+      </Heading>
       <form onSubmit={handleSubmit(onSubmit)}>
         <CustomInput<CreateTransactionValues>
           name="productId"
@@ -81,7 +84,7 @@ export const CreateTransactionForm = ({ initialData, isEdit }: Props) => {
           error={errors.type}
         >
           <option value="Buy">Compra</option>
-          <option value="Sell">Venta</option>
+          <option value="Sell">Vender</option>
         </CustomSelect>
 
         <CustomInput<CreateTransactionValues>

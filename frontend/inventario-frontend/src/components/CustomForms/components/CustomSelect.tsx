@@ -1,5 +1,4 @@
-import { Field, NativeSelect, Select } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { Field, NativeSelect } from "@chakra-ui/react";
 import {
   Control,
   Controller,
@@ -7,6 +6,7 @@ import {
   FieldValues,
   Path,
 } from "react-hook-form";
+import { ReactNode } from "react";
 
 interface Props<T extends FieldValues> {
   name: Path<T>;
@@ -39,7 +39,7 @@ export const CustomSelect = <T extends FieldValues>({
               disabled={isDisabled}
               className={`form-control ${error ? "is-invalid" : ""}`}
             >
-              <NativeSelect.Field placeholder="Seleccione una opcion">
+              <NativeSelect.Field onChange={field.onChange} value={field.value}>
                 {children}
               </NativeSelect.Field>
             </NativeSelect.Root>

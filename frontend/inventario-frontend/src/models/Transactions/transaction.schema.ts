@@ -10,7 +10,7 @@ export const createTransactionSchema = z.object({
   ),
   unitPrice: z.preprocess(
     (val) => Number(val),
-    z.number().int().nonnegative("Debe ser un número positivo"),
+    z.number().nonnegative("Debe ser un número positivo"),
   ),
   detail: z.string().optional(),
 });

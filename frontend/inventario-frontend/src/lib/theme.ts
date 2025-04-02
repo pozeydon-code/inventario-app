@@ -11,4 +11,5 @@ export const theme = createSystem(defaultConfig, {
       },
     },
   },
+  globalCss: {},
 });

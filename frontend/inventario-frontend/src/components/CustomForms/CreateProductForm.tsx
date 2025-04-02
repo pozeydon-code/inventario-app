@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useApi } from "@/hooks/useApi";
@@ -12,6 +12,7 @@ import { EmptyCreateProduct } from "@/models/Products/product.model";
 import { ImageUpload } from "../ImageUpload";
 import axiosClient from "@/api/clients/axiosClient";
 import { useNavigate } from "react-router-dom";
+import { URLS } from "@/api/url";
 
 interface Props {
   initialData?: CreateProductValues & { id: string };
@@ -56,7 +57,7 @@ export const CreateProductForm = ({ initialData, isEdit }: Props) => {
           },
         });
 
-    if (!response) {
+    if (!response || (response.status && response.status !== 200)) {
       toaster.error({
         title: `Error al ${isEdit ? "Editar" : "Crear"} el Producto`,
       });
@@ -76,7 +77,7 @@ export const CreateProductForm = ({ initialData, isEdit }: Props) => {
 
   return (
     <Box p={4} justifyItems="center">
-      <Heading mb={4}>Crear Producto</Heading>
+      <Heading mb={4}>{isEdit ? "Editar Producto" : "Crear Producto"}</Heading>
       <form onSubmit={handleSubmit(onSubmit)}>
         <CustomInput<CreateProductValues>
           name="name"
@@ -113,11 +114,20 @@ export const CreateProductForm = ({ initialData, isEdit }: Props) => {
           type="number"
           error={errors.stock}
         />
-        <ImageUpload<CreateProductValues>
-          name="image"
-          control={control}
-          error={errors.image}
-        />
+        <Flex gap={5} m={4}>
+          {isEdit ? (
+            <Image
+              src={`${URLS.imageUrls}${initialData?.image}`}
+              aspectRatio={4 / 3}
+              width="200px"
+            />
+          ) : null}
+          <ImageUpload<CreateProductValues>
+            name="image"
+            control={control}
+            error={errors.image}
+          />
+        </Flex>
 
         <Flex justify="space-between" m={4}>
           <Button type="submit" bgColor="teal.600" loading={loading}>

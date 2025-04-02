@@ -23,7 +23,7 @@ import { toaster } from "@/components/ui/toaster";
 export const ProductListPage = () => {
   const navigate = useNavigate();
   const [page, setPage] = useState<number>(1);
-  const [pageSize, setPageSize] = useState<number>(10);
+  const [pageSize] = useState<number>(10);
   const [search, setSearch] = useState<string>("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
 
@@ -86,6 +86,10 @@ export const ProductListPage = () => {
           search: debouncedSearch,
         },
       });
+    } else {
+      toaster.error({
+        title: "Error al Eliminar el producto",
+      });
     }
   };
 
@@ -93,9 +97,16 @@ export const ProductListPage = () => {
     navigate("/products/create/");
   };
 
+  const handleMoveToTransactions = () => {
+    navigate("/transactions");
+  };
+
   return (
     <Box p={4}>
-      <Heading mb={4}>Listado de Productos</Heading>
+      <Flex gap={10}>
+        <Heading mb={4}>Listado de Productos</Heading>
+        <Button onClick={handleMoveToTransactions}>Transacciones</Button>
+      </Flex>
       {loading ? (
         <Spinner />
       ) : error ? (
@@ -120,10 +131,11 @@ export const ProductListPage = () => {
                 <Table.ColumnHeader>Categoria</Table.ColumnHeader>
                 <Table.ColumnHeader>Precio</Table.ColumnHeader>
                 <Table.ColumnHeader>Stock</Table.ColumnHeader>
+                <Table.ColumnHeader></Table.ColumnHeader>
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {data?.items?.map((product) => (
+              {data?.items?.map((product: Product) => (
                 <Table.Row key={product.id}>
                   <Table.Cell> {product.name} </Table.Cell>
                   <Table.Cell> {product.description} </Table.Cell>

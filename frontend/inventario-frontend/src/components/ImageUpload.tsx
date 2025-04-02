@@ -34,7 +34,6 @@ export const ImageUpload = <T extends FieldValues>({
               <FileUpload.HiddenInput
                 onChange={(event) => {
                   const target = event.target as HTMLInputElement;
-                  // Convertimos FileList a Array<File>
                   const files = target.files ? Array.from(target.files) : [];
                   field.onChange(files);
                 }}

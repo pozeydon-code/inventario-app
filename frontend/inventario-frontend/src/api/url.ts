@@ -1,8 +1,10 @@
-const URL_PRODUCTS = "http://localhost:5106/api/";
-const URL_TRANSACTIONS = "http://localhost:5058/api/";
+const URL_PRODUCTS = "http://localhost:5106";
+const ENDPOINT_PRODUCTS = "http://localhost:5106/api/";
+const ENDPOINT_TRANSACTIONS = "http://localhost:5058/api/";
 
 export const URLS = {
-  products: URL_PRODUCTS + "products",
-  getTransactions: URL_TRANSACTIONS + "transactions",
-  getTransactionsPaged: URL_TRANSACTIONS + "transactions/paged",
+  imageUrls: URL_PRODUCTS,
+  products: ENDPOINT_PRODUCTS + "products",
+  getTransactions: ENDPOINT_TRANSACTIONS + "transactions",
+  getTransactionsPaged: ENDPOINT_TRANSACTIONS + "transactions/paged",
 };
